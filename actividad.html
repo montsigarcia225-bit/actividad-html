@@ -1,0 +1,47 @@
+<!DOCTYPE html><html>
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad JavaScript</title>
+</head>
+<body><h1>Presentación</h1><script>
+
+// Presentación
+let nombre = prompt("Hola, ¿Cuál es tu nombre?");
+
+alert("Hola " + nombre + ", bienvenido a mi programa para calcular áreas y perímetros.");
+
+// ROMBO
+let diagonalMayor = parseFloat(prompt("Ingresa la diagonal mayor del rombo:"));
+let diagonalMenor = parseFloat(prompt("Ingresa la diagonal menor del rombo:"));
+let ladoRombo = parseFloat(prompt("Ingresa la medida del lado del rombo:"));
+
+let areaRombo = (diagonalMayor * diagonalMenor) / 2;
+let perimetroRombo = ladoRombo * 4;
+
+alert("ROMBO\nÁrea: " + areaRombo + "\nPerímetro: " + perimetroRombo);
+
+// TRAPECIO
+let baseMayor = parseFloat(prompt("Ingresa la base mayor del trapecio:"));
+let baseMenor = parseFloat(prompt("Ingresa la base menor del trapecio:"));
+let altura = parseFloat(prompt("Ingresa la altura del trapecio:"));
+let lado1 = parseFloat(prompt("Ingresa el lado izquierdo:"));
+let lado2 = parseFloat(prompt("Ingresa el lado derecho:"));
+
+let areaTrapecio = ((baseMayor + baseMenor) * altura) / 2;
+let perimetroTrapecio = baseMayor + baseMenor + lado1 + lado2;
+
+alert("TRAPECIO\nÁrea: " + areaTrapecio + "\nPerímetro: " + perimetroTrapecio);
+
+// HEXÁGONO REGULAR
+let ladoHexagono = parseFloat(prompt("Ingresa la medida del lado del hexágono:"));
+let apotema = parseFloat(prompt("Ingresa la apotema del hexágono:"));
+
+let perimetroHexagono = ladoHexagono * 6;
+let areaHexagono = (perimetroHexagono * apotema) / 2;
+
+alert("HEXÁGONO\nÁrea: " + areaHexagono + "\nPerímetro: " + perimetroHexagono);
+
+alert("Gracias por utilizar el programa.");
+
+</script></body>
+</html>
